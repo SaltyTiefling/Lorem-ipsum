@@ -1,0 +1,119 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    background-color: #dddddd;
+}
+
+#logo {
+    width: 13%;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    margin-top: 2rem;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #dddddd;
+    border-bottom: solid black 0.25rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav a {
+    margin-left: 1rem;
+    border: solid black 0.1rem;
+}
+
+main article {
+    scroll-margin:9rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+main article:nth-child(2n) {
+    flex-direction: row-reverse;
+    border-top: black 0.25rem solid;
+    border-bottom:black 0.25rem solid ;
+}
+
+main article img {
+    display: flex;
+    align-self: center;
+    width: 50%;
+    height: auto;
+    margin: 0 1rem 0 1rem;
+}
+
+footer {
+    height: auto;
+    border: black 1em;
+    padding: 0.5rem;
+    margin: 1 rem;
+    border-top: 0.25em solid black;
+}
+
+footer article {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+footer #telephone::before {
+    content: "tel:";
+}
+
+footer #email::before {
+    content: "email:";
+}
+
+footer #address::before {
+    content: "address:";
+}
+
+footer article ul {
+    height: 90%;
+    list-style-type:none;
+}
+
+footer p {
+    text-align: center;
+}
+.gmap{
+    resize: both;
+    overflow: auto;
+    min-width: 25%;
+    min-height: 10rem;
+}
+.gmap iframe{
+    width: 100%;
+    height: 100%;
+}
+.button {
+    display: block;
+    position: sticky;
+    transition: all ease;
+    background-color: white;
+    border-bottom: 0.2rem solid black;
+    border-right:0.2rem solid black ;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    border-bottom: 0 solid black;
+    border-right:0 solid black ;
+    transform: translate(0.2rem,0.2rem);
+ 
+}
